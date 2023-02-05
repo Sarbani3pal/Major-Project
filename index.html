@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Music Player</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="index_style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,500&display=swap" rel="stylesheet"> 
+
+	<link href='https://css.gg/music-speaker.css' rel='stylesheet'>
+	<link href='https://css.gg/arrows-expand-right.css' rel='stylesheet'>
+	<link href='https://css.gg/play-list-add.css' rel='stylesheet'>
+
+	<link href='https://css.gg/play-track-next.css' rel='stylesheet'>
+	<link href='https://css.gg/play-track-prev.css' rel='stylesheet'>
+	<link href='https://css.gg/play-pause-o.css' rel='stylesheet'>
+	<link href='https://css.gg/repeat.css' rel='stylesheet'>
+	<link href='https://css.gg/close-o.css' rel='stylesheet'>
+	<link href='https://css.gg/menu.css' rel='stylesheet'>
+
+</head>
+<body>
+	<header>
+		<!-- Navbar -->
+		<nav class="navbar">
+			<!-- Logo -->
+			<div class="logo d-ib mg-15-15">
+				<!-- Product Image -->
+				<div class="logo-img d-ib bdr-round"></div>
+				<!-- Product Name -->
+				<div class="logo-name d-ib v-c">iMusic</div>
+			</div>
+			<!-- Page Title -->
+			<div class="page d-ib mg-15-15">Favourites</div>
+			<!-- Search Bar -->
+			<div class="search-bar d-ib mg-15-15">
+				<span><i class="fas fa-search"></i></span>
+				<span><input type="text" name="search" class="d-ib" placeholder="Search"></span>
+				<span><i class="fas fa-microphone"></i></span>
+			</div>
+			<!-- Notification -->
+			<div class="notification d-ib mg-15-15">
+				<span class="bell"><i class="fas fa-bell"></i></span>
+				<span class="dot"><i class="fas fa-circle"></i></span>
+			</div>
+			<!-- User Profile Icon -->
+			<div class="user d-ib bdr-round mg-15-15"></div>
+			<!-- Menu Icon for Small Devices -->
+			<div class="menu"><i class="fas fa-bars"></i></div>
+		</nav>
+	</header>
+	<main>
+		<section class="content">
+			<!-- Recommended Albums -->
+			<section class="recommended-albums">
+				<!-- Indivisual Poster -->
+				<div class="poster"></div>
+				<!-- Indivisual Poster -->
+				<div class="poster"></div>
+				<!-- Indivisual Poster -->
+				<div class="poster"></div>
+			</section>
+			<!-- Latest Releases -->
+			<section class="latest-release">
+				<!-- Heading -->
+				<h2>Latest Release</h2>
+				<!-- Latest Songs List -->
+				<div class="latest-songs-list">
+					<!-- Indivisual Latest Song Module -->
+					<div class="latest-song">
+						<!-- Song Preview Image -->
+						<div class="preview d-ib">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Description -->
+						<div class="desc d-ib">
+							<!-- Song Name -->
+							<div class="name">Onism</div>
+							<!-- Song Release Date -->
+							<div class="date">AUG 11, 2017</div>
+						</div>
+						<!-- More Options -->
+						<div class="more d-ib">
+							<!-- Dropdown -->
+							<div class="dropdown d-ib" style="float: right;">
+								<button class="dropbtn">
+							      <i class="fas fa-ellipsis-h"></i>
+							    </button>
+							    <div class="dropdown-content">
+							      <a href="#play"><i class="fas fa-play"></i> Play Now</a>
+							      <a href="#"><i class="fas fa-plus"></i> Add To Queue</a>
+							      <a href="#"><i class="fas fa-bars"></i> Add To Favourites</a>
+							      <a href="#"><i class="fas fa-info-circle"></i> Get Info</a>
+							    </div>
+							</div>
+							<!-- Song Durration -->
+							<div class="duration">4:44</div>
+						</div>
+					</div>
+					<!-- Indivisual Latest Song Module -->
+					<div class="latest-song">
+						<!-- Song Preview Image -->
+						<div class="preview d-ib">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Description -->
+						<div class="desc d-ib">
+							<!-- Song Name -->
+							<div class="name">Onism</div>
+							<!-- Song Release Date -->
+							<div class="date">AUG 11, 2017</div>
+						</div>
+						<!-- More Options -->
+						<div class="more d-ib">
+							<!-- Dropdown -->
+							<div class="dropdown d-ib" style="float: right;">
+								<button class="dropbtn">
+							      <i class="fas fa-ellipsis-h"></i>
+							    </button>
+							    <div class="dropdown-content">
+							      <a href="#play"><i class="fas fa-play"></i> Play Now</a>
+							      <a href="#"><i class="fas fa-plus"></i> Add To Queue</a>
+							      <a href="#"><i class="fas fa-bars"></i> Add To Favourites</a>
+							      <a href="#"><i class="fas fa-info-circle"></i> Get Info</a>
+							    </div>
+							</div>
+							<!-- Song Durration -->
+							<div class="duration">4:44</div>
+						</div>
+					</div>
+					<!-- Indivisual Latest Song Module -->
+					<div class="latest-song">
+						<!-- Song Preview Image -->
+						<div class="preview d-ib">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Description -->
+						<div class="desc d-ib">
+							<!-- Song Name -->
+							<div class="name">Onism</div>
+							<!-- Song Release Date -->
+							<div class="date">AUG 11, 2017</div>
+						</div>
+						<!-- More Options -->
+						<div class="more d-ib">
+							<!-- Dropdown -->
+							<div class="dropdown d-ib" style="float: right;">
+								<button class="dropbtn">
+							      <i class="fas fa-ellipsis-h"></i>
+							    </button>
+							    <div class="dropdown-content">
+							      <a href="#play"><i class="fas fa-play"></i> Play Now</a>
+							      <a href="#"><i class="fas fa-plus"></i> Add To Queue</a>
+							      <a href="#"><i class="fas fa-bars"></i> Add To Favourites</a>
+							      <a href="#"><i class="fas fa-info-circle"></i> Get Info</a>
+							    </div>
+							</div>
+							<!-- Song Durration -->
+							<div class="duration">4:44</div>
+						</div>
+					</div>
+					<!-- Indivisual Latest Song Module -->
+					<div class="latest-song">
+						<!-- Song Preview Image -->
+						<div class="preview d-ib">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Description -->
+						<div class="desc d-ib">
+							<!-- Song Name -->
+							<div class="name">Onism</div>
+							<!-- Song Release Date -->
+							<div class="date">AUG 11, 2017</div>
+						</div>
+						<!-- More Options -->
+						<div class="more d-ib">
+							<!-- Dropdown -->
+							<div class="dropdown d-ib" style="float: right;">
+								<button class="dropbtn">
+							      <i class="fas fa-ellipsis-h"></i>
+							    </button>
+							    <div class="dropdown-content">
+							      <a href="#play"><i class="fas fa-play"></i> Play Now</a>
+							      <a href="#"><i class="fas fa-plus"></i> Add To Queue</a>
+							      <a href="#"><i class="fas fa-bars"></i> Add To Favourites</a>
+							      <a href="#"><i class="fas fa-info-circle"></i> Get Info</a>
+							    </div>
+							</div>
+							<!-- Song Durration -->
+							<div class="duration">4:44</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="popular-artists">
+				<!-- Heading -->
+				<h2>Popular Artist</h2>
+				<!-- Artist List -->
+				<div class="artist-list">
+					<!-- Indivisual Artist Module -->
+					<div class="artist">
+						<a href="taylor_swift.html">
+							<!-- Artist Image Preview -->
+							<div class="image"></div>
+						</a>
+						<!-- Artist Name -->
+						<div class="name">Ed Sheeran</div>
+					</div>
+					<!-- Indivisual Artist Module -->
+					<div class="artist">
+						<a href="taylor_swift.html">
+							<!-- Artist Image Preview -->
+							<div class="image"></div>
+						</a>
+						<!-- Artist Name -->
+						<div class="name">Ed Sheeran</div>
+					</div>
+					<!-- Indivisual Artist Module -->
+					<div class="artist">
+						<a href="taylor_swift.html">
+							<!-- Artist Image Preview -->
+							<div class="image"></div>
+						</a>
+						<!-- Artist Name -->
+						<div class="name">Ed Sheeran</div>
+					</div>
+					<!-- Indivisual Artist Module -->
+					<div class="artist">
+						<a href="taylor_swift.html">
+							<!-- Artist Image Preview -->
+							<div class="image"></div>
+						</a>
+						<!-- Artist Name -->
+						<div class="name">Ed Sheeran</div>
+					</div>
+					<!-- Indivisual Artist Module -->
+					<div class="artist">
+						<a href="taylor_swift.html">
+							<!-- Artist Image Preview -->
+							<div class="image"></div>
+						</a>
+						<!-- Artist Name -->
+						<div class="name">Ed Sheeran</div>
+					</div>
+					<!-- Indivisual Artist Module -->
+					<div class="artist">
+						<a href="taylor_swift.html">
+							<!-- Artist Image Preview -->
+							<div class="image"></div>
+						</a>
+						<!-- Artist Name -->
+						<div class="name">Ed Sheeran</div>
+					</div>
+				</div>
+			</section>
+			<!-- Trending Stations -->
+			<section class="trending-stations">
+				<!-- Title Station -->
+				<div class="title">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<!-- Indivisual Station -->
+				<div class="stations">
+					<!-- Station Image Preview -->
+					<div class="image"></div>
+					<!-- Station Title -->
+					<div class="text d-ib">Love</div>
+				</div>
+				<!-- Indivisual Station -->
+				<div class="stations">
+					<!-- Station Image Preview -->
+					<div class="image"></div>
+					<!-- Station Title -->
+					<div class="text d-ib">Love</div>
+				</div>
+				<!-- Indivisual Station -->
+				<div class="stations">
+					<!-- Station Image Preview -->
+					<div class="image"></div>
+					<!-- Station Title -->
+					<div class="text d-ib">Love</div>
+				</div>
+				<!-- Indivisual Station -->
+				<div class="stations">
+					<!-- Station Image Preview -->
+					<div class="image"></div>
+					<!-- Station Title -->
+					<div class="text d-ib">Love</div>
+				</div>
+				<!-- Indivisual Station -->
+				<div class="stations">
+					<!-- Station Image Preview -->
+					<div class="image"></div>
+					<!-- Station Title -->
+					<div class="text d-ib">Love</div>
+				</div>
+				<!-- Indivisual Station -->
+				<div class="stations">
+					<!-- Station Image Preview -->
+					<div class="image"></div>
+					<!-- Station Title -->
+					<div class="text d-ib">Love</div>
+				</div>
+			</section>
+			<!-- Moods -->
+			<section class="moods">
+				<!-- Indivisual Mood Module -->
+				<div class="mood">
+					<!-- Mood Preview -->
+					<div class="image"></div>
+					<!-- Mood Title -->
+					<div class="text d-ib">Party</div>
+				</div>
+				<!-- Indivisual Mood Module -->
+				<div class="mood">
+					<!-- Mood Preview -->
+					<div class="image"></div>
+					<!-- Mood Title -->
+					<div class="text d-ib">Party</div>
+				</div>
+				<!-- Indivisual Mood Module -->
+				<div class="mood">
+					<!-- Mood Preview -->
+					<div class="image"></div>
+					<!-- Mood Title -->
+					<div class="text d-ib">Party</div>
+				</div>
+			</section>
+			<!-- Latest English Songs -->
+			<section class="latest english">
+				<!-- Heading -->
+				<h2>Latest English</h2>
+				<!-- Latest English Songs List -->
+				<div class="songs">
+					<!-- Indivisual Song Module -->
+					<div class="song">
+						<!-- Song Image Preview -->
+						<div class="preview">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Name -->
+						<div class="name">Break my Heart</div>
+						<!-- Song Release Date -->
+						<div class="date">MAR 25, 2020</div>
+					</div>
+					<!-- Indivisual Song Module -->
+					<div class="song">
+						<!-- Song Image Preview -->
+						<div class="preview">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Name -->
+						<div class="name">Dynamite</div>
+						<!-- Song Release Date -->
+						<div class="date">AUG 20, 2020</div>
+					</div>
+					<!-- Indivisual Song Module -->
+					<div class="song">
+						<!-- Song Image Preview -->
+						<div class="preview">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Name -->
+						<div class="name">Holy</div>
+						<!-- Song Release Date -->
+						<div class="date">SEP 18, 2020</div>
+					</div>
+					<!-- Indivisual Song Module -->
+					<div class="song">
+						<!-- Song Image Preview -->
+						<div class="preview">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Name -->
+						<div class="name">Ice Cream</div>
+						<!-- Song Release Date -->
+						<div class="date">AUG 28, 2020</div>
+					</div>
+					<!-- Indivisual Song Module -->
+					<div class="song">
+						<!-- Song Image Preview -->
+						<div class="preview">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Name -->
+						<div class="name">Montero</div>
+						<!-- Song Release Date -->
+						<div class="date">SEP 17, 2021</div>
+					</div>
+					<!-- Indivisual Song Module -->
+					<div class="song">
+						<!-- Song Image Preview -->
+						<div class="preview">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Name -->
+						<div class="name">Peaches</div>
+						<!-- Song Release Date -->
+						<div class="date">MAR 19, 2021</div>
+					</div>
+				</div>
+			</section>
+			<!-- Latest Hindi Songs -->
+			<section class="latest hindi">
+				<!-- Heading -->
+				<h2>Latest Hindi</h2>
+				<!-- Latest Hindi Songs List -->
+				<div class="songs">
+					<!-- Indivisual Song Module -->
+					<div class="song">
+						<!-- Song Image Preview -->
+						<div class="preview">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Name -->
+						<div class="name">Baarish Ki Jaye</div>
+						<div class="date">MAR 27, 2021</div>
+					</div>
+					<!-- Indivisual Song Module -->
+					<div class="song">
+						<!-- Song Image Preview -->
+						<div class="preview">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Name -->
+						<div class="name">Chal Ghar Chalen</div>
+						<!-- Song Release Date -->
+						<div class="date">JAN 10, 2020</div>
+					</div>
+					<!-- Indivisual Song Module -->
+					<div class="song">
+						<!-- Song Image Preview -->
+						<div class="preview">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Name -->
+						<div class="name">Garmi</div>
+						<!-- Song Release Date -->
+						<div class="date">DEC 25, 2019</div>
+					</div>
+					<!-- Indivisual Song Module -->
+					<div class="song">
+						<!-- Song Image Preview -->
+						<div class="preview">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Name -->
+						<div class="name">Genda Phool</div>
+						<!-- Song Release Date -->
+						<div class="date">MAR 26, 2020</div>
+					</div>
+					<!-- Indivisual Song Module -->
+					<div class="song">
+						<!-- Song Image Preview -->
+						<div class="preview">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Name -->
+						<div class="name">Pal pal dil ke paas</div>
+						<!-- Song Release Date -->
+						<div class="date">AUG 27, 2019</div>
+					</div>
+					<!-- Indivisual Song Module -->
+					<div class="song">
+						<!-- Song Image Preview -->
+						<div class="preview">
+							<div class="pvw"></div>
+							<a href="#play"><div class="play"><i class="fas fa-play"></i></div></a>
+						</div>
+						<!-- Song Name -->
+						<div class="name">Tujhe Kitna Chahne</div>
+						<!-- Song Release Date -->
+						<div class="date">MAR 31, 2019</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<!-- Queue -->
+		<aside class="queue">
+			<!-- Heading -->
+			<div class="heading">
+				<h3 class="d-ib">Queue</h3>
+				<div class="dropdown d-ib" style="float: right;">
+					<button class="dropbtn">Queue 
+				      <i class="fa fa-caret-down"></i>
+				    </button>
+				    <div class="dropdown-content">
+				      <a href="#">Playlist</a>
+				      <a href="#">Favourite Songs</a>
+				    </div>
+				</div>
+			</div>
+			<!-- Queued Songs List -->
+			<div class="songs-list">
+				<!-- Indivisual Song Module -->
+				<div class="song">
+					<!-- Song Number -->
+					<div class="song-number center">01</div>
+					<!-- Song Preview Image -->
+					<div class="song-img"></div>
+					<!-- Song Description -->
+					<div class="song-desc">
+						<!-- Song Name -->
+						<div class="song-name">Agar Tum Sath Ho</div>
+						<!-- Song Artist -->
+						<div class="song-artist">Arijit Singh</div>
+					</div>
+					<div class="song-like">
+						<!-- Unliked -->
+						<div class="unliked"><i class="far fa-heart"></i></div>
+						<!-- Liked -->
+						<div class="liked"><i class="fas fa-heart"></i></div>
+					</div>
+				</div>
+				<!-- Indivisual Song Module -->
+				<div class="song">
+					<!-- Song Number -->
+					<div class="song-number center">02</div>
+					<!-- Song Preview Image -->
+					<div class="song-img"></div>
+					<!-- Song Description -->
+					<div class="song-desc">
+						<!-- Song Name -->
+						<div class="song-name">Believer</div>
+						<!-- Song Artist -->
+						<div class="song-artist">Imagine Dragons</div>
+					</div>
+					<div class="song-like">
+						<!-- Unliked -->
+						<div class="unliked"><i class="far fa-heart"></i></div>
+						<!-- Liked -->
+						<div class="liked"><i class="fas fa-heart"></i></div>
+					</div>
+				</div>
+				<!-- Indivisual Song Module -->
+				<div class="song">
+					<!-- Song Number -->
+					<div class="song-number center">03</div>
+					<!-- Song Preview Image -->
+					<div class="song-img"></div>
+					<!-- Song Description -->
+					<div class="song-desc">
+						<!-- Song Name -->
+						<div class="song-name">Girls Like You</div>
+						<!-- Song Artist -->
+						<div class="song-artist">Maroon</div>
+					</div>
+					<div class="song-like">
+						<!-- Unliked -->
+						<div class="unliked"><i class="far fa-heart"></i></div>
+						<!-- Liked -->
+						<div class="liked"><i class="fas fa-heart"></i></div>
+					</div>
+				</div>
+				<!-- Indivisual Song Module -->
+				<div class="song">
+					<!-- Song Number -->
+					<div class="song-number center">04</div>
+					<!-- Song Preview Image -->
+					<div class="song-img"></div>
+					<!-- Song Description -->
+					<div class="song-desc">
+						<!-- Song Name -->
+						<div class="song-name">Friends</div>
+						<!-- Song Artist -->
+						<div class="song-artist">Annie Marie</div>
+					</div>
+					<div class="song-like">
+						<!-- Unliked -->
+						<div class="unliked"><i class="far fa-heart"></i></div>
+						<!-- Liked -->
+						<div class="liked"><i class="fas fa-heart"></i></div>
+					</div>
+				</div>
+				<!-- Indivisual Song Module -->
+				<div class="song">
+					<!-- Song Number -->
+					<div class="song-number center">05</div>
+					<!-- Song Preview Image -->
+					<div class="song-img"></div>
+					<!-- Song Description -->
+					<div class="song-desc">
+						<!-- Song Name -->
+						<div class="song-name">Perfect</div>
+						<!-- Song Artist -->
+						<div class="song-artist">Ed Sheeran</div>
+					</div>
+					<div class="song-like">
+						<!-- Unliked -->
+						<div class="unliked"><i class="far fa-heart"></i></div>
+						<!-- Liked -->
+						<div class="liked"><i class="fas fa-heart"></i></div>
+					</div>
+				</div>
+				<!-- Indivisual Song Module -->
+				<div class="song">
+					<!-- Song Number -->
+					<div class="song-number center">06</div>
+					<!-- Song Preview Image -->
+					<div class="song-img"></div>
+					<!-- Song Description -->
+					<div class="song-desc">
+						<!-- Song Name -->
+						<div class="song-name">Thunder</div>
+						<!-- Song Artist -->
+						<div class="song-artist">Imagine Dragons</div>
+					</div>
+					<div class="song-like">
+						<!-- Unliked -->
+						<div class="unliked"><i class="far fa-heart"></i></div>
+						<!-- Liked -->
+						<div class="liked"><i class="fas fa-heart"></i></div>
+					</div>
+				</div>
+				<!-- Indivisual Song Module -->
+				<div class="song">
+					<!-- Song Number -->
+					<div class="song-number center">07</div>
+					<!-- Song Preview Image -->
+					<div class="song-img"></div>
+					<!-- Song Description -->
+					<div class="song-desc">
+						<!-- Song Name -->
+						<div class="song-name">Shape of You</div>
+						<!-- Song Artist -->
+						<div class="song-artist">Ed Sheeran</div>
+					</div>
+					<div class="song-like">
+						<!-- Unliked -->
+						<div class="unliked"><i class="far fa-heart"></i></div>
+						<!-- Liked -->
+						<div class="liked"><i class="fas fa-heart"></i></div>
+					</div>
+				</div>
+				<!-- Indivisual Song Module -->
+				<div class="song">
+					<!-- Song Number -->
+					<div class="song-number center">08</div>
+					<!-- Song Preview Image -->
+					<div class="song-img"></div>
+					<!-- Song Description -->
+					<div class="song-desc">
+						<!-- Song Name -->
+						<div class="song-name">Blue Eyes</div>
+						<!-- Song Artist -->
+						<div class="song-artist">Honney Singh</div>
+					</div>
+					<div class="song-like">
+						<!-- Unliked -->
+						<div class="unliked"><i class="far fa-heart"></i></div>
+						<!-- Liked -->
+						<div class="liked"><i class="fas fa-heart"></i></div>
+					</div>
+				</div>
+				<!-- Indivisual Song Module -->
+				<div class="song">
+					<!-- Song Number -->
+					<div class="song-number center">09</div>
+					<!-- Song Preview Image -->
+					<div class="song-img"></div>
+					<!-- Song Description -->
+					<div class="song-desc">
+						<!-- Song Name -->
+						<div class="song-name">Blank Space</div>
+						<!-- Song Artist -->
+						<div class="song-artist">Taylor Swift</div>
+					</div>
+					<div class="song-like">
+						<!-- Unliked -->
+						<div class="unliked"><i class="far fa-heart"></i></div>
+						<!-- Liked -->
+						<div class="liked"><i class="fas fa-heart"></i></div>
+					</div>
+				</div>
+				<!-- Indivisual Song Module -->
+				<div class="song">
+					<!-- Song Number -->
+					<div class="song-number center">10</div>
+					<!-- Song Preview Image -->
+					<div class="song-img"></div>
+					<!-- Song Description -->
+					<div class="song-desc">
+						<!-- Song Name -->
+						<div class="song-name">Me</div>
+						<!-- Song Artist -->
+						<div class="song-artist">Taylor Swift</div>
+					</div>
+					<div class="song-like">
+						<!-- Unliked -->
+						<div class="unliked"><i class="far fa-heart"></i></div>
+						<!-- Liked -->
+						<div class="liked"><i class="fas fa-heart"></i></div>
+					</div>
+				</div>
+			</div>
+		</aside>
+	</main>
+	<!-- Play Bar -->
+	<section class="play-bar" id="play">
+		<!-- Song Data -->
+		<div class="song-data d-ib">
+			<!-- Song Image Preview -->
+			<div class="preview d-ib"></div>
+			<!-- Song Description -->
+			<div class="description d-ib">
+				<!-- Song Name -->
+				<div class="name">Shape Of You</div>
+				<!-- Song Artist -->
+				<div class="artist">Ed Sheeran</div>
+			</div>
+			<div class="like d-ib">
+				<!-- Unliked -->
+				<div class="unliked d-ib"><i class="far fa-heart"></i></div>
+				<!-- Liked -->
+				<div class="liked d-ib"><i class="fas fa-heart"></i></div>
+			</div>
+		</div>
+		<!-- Audio Controls -->
+		<div class="audio d-ib">
+			<div class="controls">
+				<!-- Shuffle -->
+				<div class="shuffle">
+					<i class="gg-repeat"></i>
+				</div>
+				<!-- Previous -->
+				<div class="previous">
+					<i class="gg-play-track-prev"></i>
+				</div>
+				<!-- Pause -->
+				<div class="pause">
+					<i class="gg-play-pause-o"></i>
+				</div>
+				<!-- Next -->
+				<div class="next">
+					<i class="gg-play-track-next"></i>
+				</div>
+				<!-- Repeat -->
+				<div class="repeat"><i class="fas fa-redo"></i></div>
+			</div>
+			<div class="track">
+				<!-- Current Time -->
+				<span class="d-ib">01:39</span>
+				<!-- Progress Bar -->
+				<div class="bar d-ib">
+					<div class="completed"></div>
+					<div class="pointer"><i class="fas fa-circle"></i></div>
+				</div>
+				<!-- Total Time -->
+				<span class="d-ib">04:44</span>
+			</div>
+		</div>
+		<!-- Options -->
+		<div class="options d-ib">
+			<!-- Playlist -->
+			<div class="playlist d-ib">
+				<i class="gg-play-list-add"></i>
+			</div>
+			<!-- Speaker -->
+			<div class="speaker d-ib">
+				<i class="gg-music-speaker"></i>
+			</div>
+			<!-- Sound Controls -->
+			<div class="track d-ib">
+				<!-- Volume -->
+				<span class="d-ib">
+					<i class="fas fa-volume-up"></i>
+				</span>
+				<!-- Volume Progress Bar -->
+				<div class="bar d-ib">
+					<div class="completed d-ib"></div>
+					<div class="pointer d-ib">
+						<i class="fas fa-circle"></i>
+					</div>
+				</div>
+			</div>
+			<!-- Expand -->
+			<div class="expand d-ib">
+				<i class="gg-arrows-expand-right"></i>
+			</div>
+			<!-- Close -->
+			<div class="close d-ib">
+				<a href=""><i class="gg-close-o"></i></a>
+			</div>
+		</div>
+		<!-- Play/Pause for Smaller Screen Size -->
+		<div class="play-pause"><i class="far fa-pause-circle"></i></div>
+		<!-- Close for Smaller Screen Size -->
+		<div class="terminate">
+			<a href=""><i class="fas fa-times-circle"></i></a>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,24 @@
+Write a function 'returnDay' that takes one parameter(number from 1 to 7) and returns the day of the week.
+(where 1 is Monday, 2 is Tuesday, 3 is Wednesday, etc).
+If the number is less than 1 or greater than 7, the function should return null.
+Note: Store the days of the week in the array.
+
+
+
+Q2
+Create a 'fibonacciSeries' function that takes a number N as a parameter and checks if it is a member of the Fibonacci series or not.
+Return true if the number is a member of the Fibonacci series, else return false.
+Fibonacci Series is defined by the recurrence
+  F(n) = F(n-1) + F(n-2)
+where F(0) = 0 and F(1) = 1
+Sample Input :
+finbonacciSeries(5)
+Sample Output :
+true
+
+
+Q3
+Write a program to print 1 after 1 sec, 2 after 2 sec till 5. Complete the given code to get the desired output as shown in the expected output.
+Expected Output
+
+
